@@ -14,10 +14,6 @@ namespace MaterialPrinter
 {
 	public partial class Form1 : Form, IUI
 	{
-		public void RefreshIUI()
-		{
-			this.Refresh();
-		}
 
 		delegate void SetTextCallback(string text);
 

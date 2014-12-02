@@ -31,7 +31,6 @@ namespace MaterialPrinter
 		string getMaterialFileName();
 		string getOutputFolderName();
 		void SetText(string text);
-		void RefreshIUI();
 	}
 
 	public class Engine
@@ -721,7 +720,6 @@ namespace MaterialPrinter
 			//#endregion
 
 			SetMessage("Creating shader...");
-			_iui.RefreshIUI();
 			Shader test = Dynamic_Shader.Show(Client, Device, Scene, Shader.ShaderType.Material);
 			scene.AddShader(test);
 			scene.DefaultSurface = test;
